@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Noto Sans Mono", serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+body > .wrapper {
+    background-image: url("../img/freisein_bg.png");
+    background-size: cover;
+    background-position: 35%;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper > .wrapper__inner svg {
+    width: 500px;
+    max-width: 80vw;
+}
+
+.wrapper__inner > .wrapper__inner-nav {
+    text-align: center;
+}
+
+.wrapper__inner-nav {
+    margin-top: 1.388rem;
+}
+
+.wrapper__inner-nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 3rem 0;
+}
+
+.wrapper__inner-nav a[disabled] {
+    text-decoration: line-through;
+    pointer-events: none;
+}
+.wrapper__inner-nav a b {
+    font-weight: 400;
+}
